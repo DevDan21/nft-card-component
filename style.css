@@ -1,0 +1,137 @@
+body {
+  font-family: "Outfit";
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 14px;
+  padding: 20px;
+  max-width: 270px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* IMAGE OVERLAY SECTION */
+
+.equilibrium {
+  max-width: 100%;
+  border-radius: 7px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+  border-radius: 7px;
+}
+
+.image-container:hover .overlay {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+/* TEXT STYLING SECTION */
+
+h2 {
+  color: white;
+}
+
+h2:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+p {
+  margin: 10px 0px;
+}
+
+/* ETHEREUM VALUE AND DAYS SECTION */
+
+.eth-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eth-value {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.eth-clock,
+.eth-value {
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  padding: 0 5px 0 0;
+}
+
+/* AVATAR PROFILE SECTION */
+
+hr {
+  opacity: 0.2;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar-img {
+  border: solid white 1px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+span {
+  color: white;
+}
+
+span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+/* ATTRIBUTION SECTION */
+
+.attribution {
+  position: fixed;
+  bottom: 10px;
+  color: white;
+  text-align: center;
+}
+
+a {
+  color: hsl(178, 100%, 50%);
+}
